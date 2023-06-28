@@ -4,7 +4,11 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>CrowdParlay.Communication.RabbitMq</RootNamespace>
+        <Authors>CrowdParlay</Authors>
+        <Version>1.0.0</Version>
+        <Description>CrowdParlay's RabbitMQ communication API implementation.</Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <RepositoryUrl>https://gitlab.otter.su/crowdparlay/dotnet-communication</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>

@@ -4,6 +4,11 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Authors>CrowdParlay</Authors>
+        <Version>1.0.0</Version>
+        <Description>CrowdParlay's common .NET API for platform-wide communication.</Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <RepositoryUrl>https://gitlab.otter.su/crowdparlay/dotnet-communication</RepositoryUrl>
     </PropertyGroup>
 
 </Project>
