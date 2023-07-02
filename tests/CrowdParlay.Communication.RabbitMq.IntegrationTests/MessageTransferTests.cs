@@ -1,18 +1,14 @@
-using CrowdParlay.Communication.RabbitMq.IntegrationTests.Services;
+using CrowdParlay.Communication.Abstractions;
+using CrowdParlay.Communication.RabbitMq.IntegrationTests.Attributes;
+using CrowdParlay.Communication.RabbitMq.IntegrationTests.Props;
 using CrowdParlay.Communication.RabbitMq.IntegrationTests.Setups;
 using FluentAssertions;
 
 namespace CrowdParlay.Communication.RabbitMq.IntegrationTests;
 
-public class InjectRabbitMqAttribute : AutoDataAttribute
+public sealed class MessageTransferTests
 {
-    public InjectRabbitMqAttribute() : base(() => new Fixture()
-        .Customize(new RabbitMqSetup())) { }
-}
-
-public class MessageTransferTests
-{
-    [Theory(Timeout = 5000), InjectRabbitMq]
+    [Theory(Timeout = 5000), Setup<RabbitMqSetup>]
     public async Task OutcomeEvent_ShouldBeTransferredInto_EquivalentIncomeEvent(RabbitMqMessageBroker broker, UserUpdatedEvent outcomeEvent)
     {
         // Arrange
