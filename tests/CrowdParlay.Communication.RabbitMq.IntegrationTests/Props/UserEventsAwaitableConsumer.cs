@@ -1,6 +1,6 @@
 using CrowdParlay.Communication.Abstractions;
 
-namespace CrowdParlay.Communication.RabbitMq.IntegrationTests.Services;
+namespace CrowdParlay.Communication.RabbitMq.IntegrationTests.Props;
 
 public class UserEventsAwaitableConsumer : IMessageListener<UserCreatedEvent>, IMessageListener<UserUpdatedEvent>, IMessageListener<UserDeletedEvent>
 {
