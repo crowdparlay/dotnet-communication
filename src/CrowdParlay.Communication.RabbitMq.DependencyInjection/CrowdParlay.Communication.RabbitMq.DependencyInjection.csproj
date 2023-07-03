@@ -5,7 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <Authors>CrowdParlay</Authors>
-        <Version>1.0.2</Version>
+        <Version>1.0.3</Version>
         <Description>CrowdParlay's RabbitMQ communication integrated with Microsoft's dependency injection implementation.</Description>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <RepositoryUrl>https://gitlab.otter.su/crowdparlay/dotnet-communication</RepositoryUrl>
