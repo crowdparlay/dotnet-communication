@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Authors>CrowdParlay</Authors>
+        <Version>1.0.3</Version>
+        <Description>CrowdParlay's RabbitMQ communication integrated with Microsoft's dependency injection implementation.</Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <RepositoryUrl>https://gitlab.otter.su/crowdparlay/dotnet-communication</RepositoryUrl>
+        <PackageIcon>logo.png</PackageIcon>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <InternalsVisibleTo Include="CrowdParlay.Communication.RabbitMq.DependencyInjection.UnitTests" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CrowdParlay.Communication.RabbitMq\CrowdParlay.Communication.RabbitMq.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="..\..\docs\logo.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+        <Link>logo.png</Link>
+      </None>
+    </ItemGroup>
+
+</Project>
