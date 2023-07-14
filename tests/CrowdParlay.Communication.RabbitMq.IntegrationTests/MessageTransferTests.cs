@@ -1,4 +1,3 @@
-using CrowdParlay.Communication.Abstractions;
 using CrowdParlay.Communication.RabbitMq.IntegrationTests.Attributes;
 using CrowdParlay.Communication.RabbitMq.IntegrationTests.Props;
 using CrowdParlay.Communication.RabbitMq.IntegrationTests.Setups;
