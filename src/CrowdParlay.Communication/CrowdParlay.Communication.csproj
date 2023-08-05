@@ -20,4 +20,8 @@
       </None>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.16" />
+    </ItemGroup>
+
 </Project>
